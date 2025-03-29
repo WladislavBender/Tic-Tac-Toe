@@ -11,6 +11,10 @@ body {
     margin: 0;
 }
 
+#content{
+    position: relative;
+}
+
 h1{
     text-align: center;
 }
@@ -49,4 +53,38 @@ tr:first-child td {
 
 tr:last-child td {
     border-bottom: none;
+}
+
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mt-32{
+    margin-top: 32px;
+}
+
+/* Zentriere den Button unterhalb des Spiels */
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #00B0EF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+/* Hover-Effekt */
+button:hover {
+    background-color: #0088CC;
+}
+
+/* Klick-Animation */
+button:active {
+    transform: scale(0.95);
 }
